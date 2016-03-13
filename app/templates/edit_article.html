@@ -5,10 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-    <form action="new_article" method="post">
-    <p>标题：<input type="text" name="title"></p>
-    <p>作者：<input type="text" name="author"></p>
-    <p>内容：<textarea name="content" id="" cols="30" rows="10"></textarea></p>
+    <form action="/update_article" method="post">
+            <input type="hidden" name="article_id" value="{{ session['article_id'] }}">
+    <p>标题：<input type="text" name="title" value="{{ session['title'] }}"></p>
+    <p>作者：<input type="text" name="author" value="{{ session['author'] }}"></p>
+    <p>内容：<input type="text" height='20' width='120' name="content" value="{{ session['content'] }}"></p>
     <button type="submit">提交</button>
+    </form>
 </body>
 </html>

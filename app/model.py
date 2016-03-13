@@ -1,16 +1,35 @@
-from app import db
+# encoding=utf8
+from datetime import datetime
+
+from . import db
 
 
 class Article(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(80), unique=True)
-    author = db.Column(db.String(20), nullable=False)
-    content = db.Column(db.String(400), unique=True)
+    # 如果没有定义 __tablename__ ,Flask-
+    # 数据库 | 47SQLAlchemy 会使用一个默认名字,但默认的表名没有遵守使用复数形式进行命名的约定
 
-    def __init__(self, title, author, content):
-        self.title = title
-        self.author = author
-        self.content = content
+    __tablename__ = 'articles'
+
+    # primary_key 如果设为 True ,这列就是表的主键
+    # unique 如果设为 True ,这列不允许出现重复的值
+    # index 如果设为 True ,为这列创建索引,提升查询效率
+    # nullable 如果设为 True ,这列允许使用空值;如果设为 False ,这列不允许使用空值
+    # default 为这列定义默认值
+    id = db.Column(db.Integer, primary_key=True, unique=True)
+    title = db.Column(db.String(80), nullable=False)
+    author = db.Column(db.String(20), nullable=False)
+    content = db.Column(db.String(400))
+
+    del_status = db.Column(db.Integer, default=1)
+    created_time = db.Column(db.DateTime, default=datetime.now())
+
+    # def __init__(self, title, author, content, del_status):
+    #     self.title = title
+    #     self.author = author
+    #     self.content = content
+    #     self.del_status = del_status
 
     def __repr__(self):
-        return "title is {} author is {} content is {}".format(self.title, self.author, self.content)
+        id = self.id
+        ti = self.title
+        return '<id: %d title: %r>' % (self.id, self.title)

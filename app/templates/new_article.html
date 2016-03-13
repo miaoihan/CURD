@@ -5,7 +5,7 @@
     <title>new</title>
 </head>
 <body>
-    <form action="new_article" method="post">
+    <form action="{{ url_for('new_article') }}" method="post">
     <p>标题：<input type="text" name="title"></p>
     <p>作者：<input type="text" name="author"></p>
     <p>内容：<textarea name="content" id="" cols="30" rows="10"></textarea></p>
