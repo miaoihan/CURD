@@ -1,5 +1,5 @@
-#!/usr/bin/ python
-# coding=utf-8
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 from app import app, db
 from app.model import Article
 from flask.ext.script import Manager, Shell
@@ -14,7 +14,7 @@ def query_all():
     # users = User.query_all()
     articles = Article.query.all()
     for a in articles:
-        print a
+        print (a)
 
 
 @manage.command

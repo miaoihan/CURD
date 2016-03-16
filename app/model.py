@@ -30,6 +30,4 @@ class Article(db.Model):
     #     self.del_status = del_status
 
     def __repr__(self):
-        id = self.id
-        ti = self.title
         return '<id: %d title: %r>' % (self.id, self.title)
