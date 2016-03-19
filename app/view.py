@@ -2,7 +2,7 @@
 # coding=utf-8
 from app import app, db
 from flask import render_template, request, url_for, redirect, session
-from model import Article
+from app.model import Article
 from datetime import datetime
 
 

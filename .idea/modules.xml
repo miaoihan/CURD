@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CURD.iml" filepath="$PROJECT_DIR$/.idea/CURD.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../curdPro/.idea/curdPro.iml" filepath="$PROJECT_DIR$/../curdPro/.idea/curdPro.iml" />
     </modules>
   </component>
 </project>
