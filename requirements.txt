@@ -43,7 +43,7 @@ launchpadlib==1.10.3
 lazr.restfulclient==0.13.4
 lazr.uri==1.0.3
 lockfile==0.8
-lxml==3.4.2
+lxml==4.6.3
 Magic-file-extensions==0.2
 Mako==1.0.4
 MarkupSafe==0.23
