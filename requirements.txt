@@ -103,7 +103,7 @@ unity-china-photo-scope==1.0
 unity-lens-photos==1.0
 unity-singlet==0.2.2
 urlgrabber==3.9.1
-urllib3==1.9.1
+urllib3==1.26.5
 uTidylib==0.2
 virtualenv==1.11.6
 visitor==0.1.2
