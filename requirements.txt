@@ -1,7 +1,7 @@
 adium-theme-ubuntu==0.3.4
 alembic==0.8.5
 apt-xapian-index==0.46
-Babel==2.2.0
+Babel==2.9.1
 BeautifulSoup==3.2.1
 beautifulsoup4==4.3.2
 blinker==1.4
