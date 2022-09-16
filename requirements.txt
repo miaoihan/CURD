@@ -45,7 +45,7 @@ lazr.uri==1.0.3
 lockfile==0.8
 lxml==3.4.2
 Magic-file-extensions==0.2
-Mako==1.0.4
+Mako==1.2.2
 MarkupSafe==0.23
 mechanize==0.2.5
 migrate==0.3.8
